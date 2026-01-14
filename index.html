@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="index.css">
+
+    <title>Home - Catalyzed Chemistry</title>
+
+    <!-- PlayCDN Script for using TailwindCSS during development with compilation -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <!-- jQuery CDN Link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+
+    <header class="w-[100%] fixed bottom-0 top-0">
+        <div id="header-background" class="bg-gray-200 h-fit flex flex-wrap justify-center md:justify-between items-center w-[100%] p-[1rem]">
+            <div id="logo" class="flex justify-center md:justify-start w-[100%] gap-[0.35rem] md:w-fit items-center">
+                <img class="size-[2.75rem] sm:size-[3.25rem] shrink" src="./src/assets/Catalyzed Chemistry Logo.svg" alt="Catalyzed Chemistry Logo">
+                <h1 id="logo-text" class="text-2xl sm:text-3xl font-[650]">Catalyzed Chemistry</h1>
+            </div>
+    
+            <nav class="flex w-[80vw] md:w-fit mt-[0.65rem] md:m-0 text-md sm:text-lg justify-evenly md:gap-[0.85rem] items-center select-none">
+                <div id="resources-button" class="flex p-[0.35rem] px-[0.65rem] rounded-lg bg-gray-400 transition hover:bg-gray-500 gap-[0.2rem] items-center">
+                    <div id="dropdown-indicator" class="block text-sm">▼</div>
+                    <p class="">Resources</p>
+                </div>
+                <a href="" class="block p-[0.35rem] px-[0.65rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Dashboard</a>
+            </nav>
+        </div>
+
+        <div id="resources-container" class="w-[100vw]">
+            <div id="resources-dropdown" class="flex m-[1rem] mx-[2rem] sm:mx-[3rem] p-[0.5rem] py-[0.75rem] rounded-lg shrink-0 bg-gray-200 justify-evenly transition duration-500 opacity-0">
+                <a href="" class="block">Lessons</a>
+                <a href="" class="block">Videos</a>
+                <a href="" class="block">Activities & Labs</a>
+                <a href="" class="block">Quizzes</a>
+            </div>
+        </div>
+
+        <script src="./src/scripts/header.js"></script>
+    </header>
+
+    <main class="mt-[4rem]">
+
+    </main>
+
+</body>
+</html>
