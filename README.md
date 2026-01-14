@@ -17,6 +17,6 @@ This is admittedly kind of a note-to-self thing.
 To set up the Dev Enviornment:
 1. Open root folder
 2. Run ```npm install``` to install dependencies (TailwindCSS CLI)
-3. Run ```npx @tailwindcss/cli -i ./src/index-style.css -o ./index.css --watch``` to have the TailwindCSS CLI watch for changes and recompile the CSS.
+3. Run ```npx @tailwindcss/cli -i ./src/original-style.css -o ./style.css --watch``` to have the TailwindCSS CLI watch for changes and recompile the CSS.
 4. Get Developing :)
 
