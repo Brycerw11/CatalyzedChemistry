@@ -1,6 +1,6 @@
 # Catalyzed Chemistry
 
-A website hub for learning Chemistry. 
+An online learning hub centered around teaching Chemistry. 
 
 This website was made for the FBLA Website Design Event's 2025-2026 prompt.
 
