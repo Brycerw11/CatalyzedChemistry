@@ -13,45 +13,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- jQuery CDN Link -->
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 </head>
 <body class="font-sans">
 
     <header class="w-[100%] h-fit fixed bottom-0 top-0">
         <div id="header-background" class="bg-gray-200 h-fit flex flex-wrap justify-center md:justify-between items-center w-[100%] p-[1rem]">
-            <div id="logo" class="flex justify-center md:justify-start w-[100%] gap-[0.35rem] md:w-fit items-center">
+            <a href="./index.html" id="logo" class="flex justify-center md:justify-start w-[100%] gap-[0.35rem] md:w-fit items-center">
                 <img class="size-[2.75rem] sm:size-[3.25rem] shrink" src="./src/assets/Catalyzed Chemistry Logo.svg" alt="Catalyzed Chemistry Logo">
-                <a id="logo-text" href="index.html" class="text-2xl sm:text-3xl font-[650]">Catalyzed Chemistry</a>
-            </div>
+                <p id="logo-text" href="index.html" class="text-2xl sm:text-3xl font-[650]">Catalyzed Chemistry</p>
+            </a>
     
-            <nav class="flex w-[80vw] md:w-fit mt-[0.65rem] md:m-0 text-md justify-evenly md:gap-[0.85rem] items-center select-none">
-                <div id="resources-button" class="flex p-[0.35rem] px-[0.65rem] rounded-lg bg-gray-400 transition hover:bg-gray-500 gap-[0.2rem] items-center">
-                    <div id="dropdown-indicator" class="block text-sm">▼</div>
-                    <p class="">Resources</p>
-                </div>
-                <a href="" class="block p-[0.35rem] px-[0.65rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Calendar</a>
-                <a href="" class="block p-[0.35rem] px-[0.65rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Dashboard</a>
+            <nav class="flex w-[80vw] md:w-fit mt-[0.65rem] md:m-0 text-lg justify-evenly md:gap-[0.85rem] items-center select-none">
+                <a href="./resources.html" class="p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Resources</a>
+                <a href="" class="block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Calendar</a>
+                <a href="" class="block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition hover:bg-gray-500">Dashboard</a>
             </nav>
         </div>
 
-        <div id="resources-container" class="w-[100vw]">
-            <div id="resources-dropdown" class="flex m-[1rem] mx-[2rem] sm:mx-[3rem] px-[0.5rem] py-[0.45rem] rounded-full shrink-0 bg-gray-200 justify-evenly items-center transition duration-500 opacity-0">
-                <a href="resources.html#lessons" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Lessons</a>
-                <a href="resources.html#videos" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Videos</a>
-                <a href="resources.html#activites-labs" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Activities & Labs</a>
-                <a href="resources.html#quizzes" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Quizzes</a>
-            </div>
-        </div>
-
-        <script src="./src/scripts/header.js"></script>
     </header>
 
     <main class="mt-[8rem] md:mt-[6rem]">
-        <div id="hero" class="w-[100%] min-h-[60vh] bg-[url(./src/assets/heroBG.svg)] flex items-center justify-center">
+        <div id="hero" class="w-[100%] min-h-[40vh] bg-[url(./src/assets/heroBG.svg)] flex items-center justify-center">
             <div id="hero-section" class="relative top-[4rem] flex flex-col justify-center items-center">
-                <h2 id="hero-text" class="text-white text-5xl font-semibold text-center m-[1.5rem] mb-[0.25rem]">Chemistry am i right?</h2>
-                <h3 id="hero-subtext" class="text-white text-2xl font-normal text-center m-[1.5rem] mt-0">Woah Subtext</h3>
-                <a id="hero-resources-button" href="" class="px-[1rem] py-[0.75rem] bg-gray-300 hover:bg-gray-200 rounded-lg w-fit flex-0">View Resources Now</a>
+                <h2 id="hero-text" class="text-white text-5xl font-semibold text-center m-[1.5rem] mb-[0.45rem]">Lowering the Activation Energy of Learning</h2>
+                <h3 id="hero-subtext" class="text-gray-300 text-2xl font-semibold text-center m-[1.5rem] mt-0">Chemistry resources created By Students, For Students</h3>
+                <a id="hero-resources-button" href="./resources.html" class="px-[0.85rem] py-[0.55rem] mb-[2rem] bg-gray-300 hover:bg-gray-200 rounded-lg w-fit flex-0">View Resources Now</a>
             </div>
         </div>
     </main>
