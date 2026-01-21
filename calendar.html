@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calendar - Catalyzed Chemistry</title>
+    <link rel="shortcut icon" href="./src/assets/Catalyzed Chemistry Logo.svg" type="image/x-icon">
+
+    <!-- PlayCDN Script for using TailwindCSS during development without compilation -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+
+    <!-- jQuery CDN Link -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+
+    <header class="w-[100%] h-fit fixed bottom-0 top-0 z-50">
+        <div id="header-background" class="bg-gray-200 h-fit flex flex-wrap justify-center md:justify-between items-center w-[100%] p-[1rem]">
+            <a href="./index.html" id="logo" class="flex justify-center md:justify-start w-[100%] gap-[0.35rem] md:w-fit items-center">
+                <img class="size-[2.75rem] sm:size-[3.25rem] shrink" src="./src/assets/Catalyzed Chemistry Logo.svg" alt="Catalyzed Chemistry Logo">
+                <p id="logo-text" href="index.html" class="text-2xl sm:text-3xl font-[650]">Catalyzed Chemistry</p>
+            </a>
+    
+            <nav class="flex w-[80vw] md:w-fit mt-[0.65rem] md:m-0 text-lg justify-evenly md:gap-[0.85rem] items-center select-none">
+                <a href="./resources.html" class="p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Resources</a>
+                <a href="./calendar.html" class="font-semibold block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Calendar</a>
+                <a href="" class="block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Dashboard</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Start of Page's Main Content -->
+    <main class="m-[1rem] mt-[9.5rem] md:mt-[6.25rem]">
+        <h1 class="text-center text-5xl font-bold">Calendar</h1>
+
+        <h3 id="agenda-header" class="text-center font-bold text-2xl mt-[1rem]">Upcoming Events</h3>
+
+        <div id="agenda" class="flex mt-[0.5rem] mx-[1rem] gap-[0.5rem] flex-wrap justify-around items-center">
+            Agenda is Loading...
+        </div>
+
+        <div id="centering-div" class="flex justify-evenly mt-[2rem]">
+            <button id="back-button" class="py-[0.4rem] px-[0.6rem] bg-gray-300 hover:bg-gray-400 transition duration-500 rounded-lg"></button>
+            <button id="recenter-button" class="py-[0.4rem] px-[0.6rem] bg-gray-300 hover:bg-gray-400 transition duration-500 rounded-lg hidden">Back to current month</button>
+            <button id="forward-button" class="py-[0.4rem] px-[0.6rem] bg-gray-300 hover:bg-gray-400 transition duration-500 rounded-lg"></button>
+        </div>
+
+        <script src="./src/scripts/calendar/calendar.js"></script>
+    </main>
+    <!-- End of Page's Main Content -->
+
+    <footer class="bg-gray-200 flex justify-between p-[1rem] items-center">
+        <div id="logo" class="flex justify-center md:justify-start gap-[0.35rem] md:w-fit items-center">
+            <img class="size-[2.25rem] sm:size-[2.75rem] shrink" src="./src/assets/Catalyzed Chemistry Logo.svg" alt="Catalyzed Chemistry Logo">
+            <p id="logo-text" href="index.html" class="text-1xl sm:text-2xl font-[650]">Catalyzed Chemistry</p>
+        </div>
+
+        <div id="copyright" class="text-gray-900 font-semibold">© 2026 Brycerw11</div>
+    </footer>
+
+</body>
+</html>
