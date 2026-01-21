@@ -4,7 +4,8 @@ $(function (){
     
     $("#go-to-lessons").on("click", function(){
         let clientRect = document.getElementById("lessons").getBoundingClientRect()
-        let targetScrollY = clientRect.top + window.scrollY - 216;
+        let offSet = document.getElementById("resources-dropdown").getBoundingClientRect().bottom;
+        let targetScrollY = clientRect.top + window.scrollY - offSet - 16;
 
         $('html, body').animate({
             scrollTop: targetScrollY
@@ -13,7 +14,8 @@ $(function (){
 
     $("#go-to-videos").on("click", function(){
         let clientRect = document.getElementById("videos").getBoundingClientRect()
-        let targetScrollY = clientRect.top + window.scrollY - 216;
+        let offSet = document.getElementById("resources-dropdown").getBoundingClientRect().bottom;
+        let targetScrollY = clientRect.top + window.scrollY - offSet - 16;
 
         $('html, body').animate({
             scrollTop: targetScrollY
@@ -22,7 +24,8 @@ $(function (){
 
     $("#go-to-activities-labs").on("click", function(){
         let clientRect = document.getElementById("activities-labs").getBoundingClientRect()
-        let targetScrollY = clientRect.top + window.scrollY - 216;
+        let offSet = document.getElementById("resources-dropdown").getBoundingClientRect().bottom;
+        let targetScrollY = clientRect.top + window.scrollY - offSet - 16;
 
         $('html, body').animate({
             scrollTop: targetScrollY
@@ -31,7 +34,18 @@ $(function (){
 
     $("#go-to-quizzes").on("click", function(){
         let clientRect = document.getElementById("quizzes").getBoundingClientRect()
-        let targetScrollY = clientRect.top + window.scrollY - 216;
+        let offSet = document.getElementById("resources-dropdown").getBoundingClientRect().bottom;
+        let targetScrollY = clientRect.top + window.scrollY - offSet - 16;
+
+        $('html, body').animate({
+            scrollTop: targetScrollY
+        }, 800);
+    })
+
+    $("#go-to-misc").on("click", function(){
+        let clientRect = document.getElementById("misc").getBoundingClientRect()
+        let offSet = document.getElementById("resources-dropdown").getBoundingClientRect().bottom;
+        let targetScrollY = clientRect.top + window.scrollY - offSet - 16;
 
         $('html, body').animate({
             scrollTop: targetScrollY
