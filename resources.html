@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Resources - Catalyzed Chemistry</title>
+    <link rel="shortcut icon" href="./src/assets/Catalyzed Chemistry Logo.svg" type="image/x-icon">
+
+    <!-- PlayCDN Script for using TailwindCSS during development with compilation -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- jQuery CDN Link -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans">
+
+    <header class="w-[100%] h-fit fixed bottom-0 top-0">
+        <div id="header-background" class="bg-gray-200 h-fit flex flex-wrap justify-center md:justify-between items-center w-[100%] p-[1rem]">
+            <a href="./index.html" id="logo" class="flex justify-center md:justify-start w-[100%] gap-[0.35rem] md:w-fit items-center">
+                <img class="size-[2.75rem] sm:size-[3.25rem] shrink" src="./src/assets/Catalyzed Chemistry Logo.svg" alt="Catalyzed Chemistry Logo">
+                <p id="logo-text" href="index.html" class="text-2xl sm:text-3xl font-[650]">Catalyzed Chemistry</p>
+            </a>
+    
+            <nav class="flex w-[80vw] md:w-fit mt-[0.65rem] md:m-0 text-lg justify-evenly md:gap-[0.85rem] items-center select-none">
+                <a href="./resources.html" class="font-semibold p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Resources</a>
+                <a href="" class="block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Calendar</a>
+                <a href="" class="block p-[0.45rem] px-[0.75rem] rounded-lg bg-gray-400 transition duration-500 hover:bg-gray-500">Dashboard</a>
+            </nav>
+        </div>
+
+        <div id="resources-container" class="w-[100vw] select-none">
+            <div id="resources-dropdown" class="flex m-[1rem] mx-[2rem] sm:mx-[3rem] md:mx-[10vw] px-[0.5rem] py-[0.45rem] rounded-4xl sm:rounded-full shrink-0 bg-gray-200 justify-evenly items-center flex-wrap gap-[0.5rem] gap-y-[0.75rem] border-3 border-white">
+                <a id="go-to-lessons" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Lessons</a>
+                <a id="go-to-videos" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Videos</a>
+                <a id="go-to-activities-labs" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Activities & Labs</a>
+                <!-- <a id="go-to-quizzes" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Quizzes</a> -->
+                <a id="go-to-misc" class="block py-[0.3rem] px-[0.85rem] hover:bg-gray-300 rounded-full transition duration-500">Misc</a>
+            </div>
+        </div>
+
+        <script src="./src/scripts/resources-header.js"></script>
+    </header>
+
+    <main class="mt-[13.5rem] md:mt-[11.5rem] mx-[1rem]">
+        <h1 class="text-center text-5xl font-bold">Resources</h1>
+
+        <!-- Start of the Lesson Resources Section -->
+        <h2 id="lessons" class="text-3xl m-[1rem] mt-[2rem] font-semibold">Lessons</h2>
+        <div id="lessons-section" class="flex w-[98%] mx-[2%] justify-evenly flex-wrap gap-[1rem] items-center">
+
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.1 Moles and Molar Mass</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.2 Mass Spectra of Elements</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.3 Elemental Composition of Pure Substances</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.4 Composition of Mixtures</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.5 Photoelectron Spectroscopy</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.6 Periodic Trends</h3> 
+                <div id="tags-container" class="flex p-[0.25rem]">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+            <a href="" id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[20rem] min-h-[3.5rem] bg-gray-100 hover:bg-gray-300 transition duration-500 h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">1.7 Valence Electrons and Ionic Compounds</h3> 
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Start of the Video Resources Section -->
+        <h2 id="videos" class="text-3xl m-[1rem] mt-[2rem] font-semibold">Videos</h2>
+        <div id="lessons-section" class="flex w-[100%] justify-evenly flex-wrap items-center">
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">Lab Safety - Crash Course Chemistry</h3>
+                <p id="resource-description" class="text-lg">A Crash Course Chemistry video on lab techniques and safety.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-safety" class="bg-emerald-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Safety</div>
+                    <div id="tag-general" class="bg-slate-600 p-[0.5rem] py-[0.25rem] rounded-md text-white">General</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://youtu.be/VRWRmIEHr3A?si=gfeqTRm8ramg1CB3" target="_blank" id="resource-link" class="flex items-center gap-x-[0.25rem] w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        View on YouTube
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="size-[1rem]">
+                    </a>
+                </div> 
+            </div>
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">Stoichiometry - Crash Course Chemistry</h3>
+                <p id="resource-description" class="text-lg">A Crash Course Chemistry video on stoichiometry.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-unit-1" class="bg-cyan-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 1</div>
+                    <div id="tag-unit-4" class="bg-pink-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 4</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://youtu.be/UL1jmJaUkaQ?si=yPhqM6Y5nZNRWpdp" target="_blank" id="resource-link" class="flex items-center gap-x-[0.25rem] w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        View on YouTube
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="size-[1rem]">
+                    </a>
+                </div> 
+            </div>
+
+        </div>
+
+        <!-- Start of the Activities & Labs Resources Section -->
+        <h2 id="activities-labs" class="text-3xl m-[1rem] mt-[2rem] font-semibold">Activities & Labs</h2>
+        <div id="lessons-section" class="flex w-[100%] justify-evenly flex-wrap items-center">
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">Molecule Shapes - PhET</h3>
+                <p id="resource-description" class="text-lg">A PhET Simulation that demonstrates molecule shapes according to VSEPR Theory.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-unit-2" class="bg-purple-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 2</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_all.html" target="_blank" id="resource-link" class="flex items-center gap-x-[0.25rem] w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        Open
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="size-[1rem]">
+                    </a>
+                </div> 
+            </div>
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">Beer's Law Lab - PhET</h3>
+                <p id="resource-description" class="text-lg">A PhET Lab that demonstrates Beer's Law.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-unit-3" class="bg-fuchsia-700 p-[0.5rem] py-[0.25rem] rounded-md text-white">Unit 3</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_all.html" target="_blank" id="resource-link" class="flex items-center gap-x-[0.25rem] w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        Open
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="size-[1rem]">
+                    </a>
+                </div> 
+            </div>
+
+        </div>
+
+        <!-- Start of the Quizzes Resources Section -->
+        <!-- <h2 id="quizzes" class="text-3xl m-[1rem] mt-[2rem] font-semibold">Quizzes</h2>
+        <div id="lessons-section" class="flex w-[100%] justify-evenly flex-wrap items-center">
+
+            <div class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">Moles and Molar Mass</h3>
+                <p id="resource-description" class="text-lg">Resource description......</p>
+                <div id="link-container" class="flex justify-end">
+                    <a href="" id="resource-link" class="block w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-200 rounded-lg m-[0.35rem]">Go To</a>
+                </div>
+            </div>
+
+        </div> -->
+
+        <!-- Start of the Misc Resources Section -->
+        <h2 id="misc" class="text-3xl m-[1rem] mt-[2rem] font-semibold">Miscellaneous Resources</h2>
+        <div id="lessons-section" class="flex w-[100%] justify-evenly mb-[1rem] flex-wrap items-center">
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">AP Chemistry Course & Exam Description</h3>
+                <p id="resource-description" class="text-lg">The description of the AP Chemistry curriculum which these resources adhere to.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-general" class="bg-slate-600 p-[0.5rem] py-[0.25rem] rounded-md text-white">General</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://apcentral.collegeboard.org/media/pdf/ap-chemistry-course-and-exam-description.pdf" target="_blank" id="resource-link" class="block w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        View
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="inline size-[1rem]">
+                    </a>
+                </div>
+            </div>
+
+            <div id="resource" class="border-3 p-[0.35rem] rounded-2xl w-[100%] md:w-[32rem] min-h-[3rem] bg-gray-100 m-[0.25rem] h-fit">
+                <h3 id="resource-name" class="text-xl font-semibold">AP Chemistry Periodic Table & Formula Sheet</h3>
+                <p id="resource-description" class="text-lg">The official AP Chemistry Periodic Table and Formula Sheet.</p>
+                <div id="tags-container" class="flex p-[0.25rem] gap-[0.5rem] select-none">
+                    <div id="tag-general" class="bg-slate-600 p-[0.5rem] py-[0.25rem] rounded-md text-white">General</div>
+                </div>
+
+                <div id="link-container" class="flex justify-end">
+                    <a href="https://apcentral.collegeboard.org/media/pdf/ap-chemistry-equations-sheet.pdf" target="_blank" id="resource-link" class="block w-fit py-[0.45rem] px-[0.55rem] bg-gray-300 hover:bg-gray-400 rounded-lg m-[0.35rem] transition duration-500">
+                        View
+                        <img src="./src/assets/openInNewTabIcon.svg" alt="Open in new tab icon" class="inline size-[1rem]">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <script src="./src/scripts/resources-tag-system.js"></script>
+</body>
+</html>
