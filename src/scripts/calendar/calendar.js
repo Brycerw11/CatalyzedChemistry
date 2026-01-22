@@ -58,28 +58,28 @@ $(function (){
                 if(currSession.day == currentDate.getDate() && calendarMonth == currentDate.getMonth() && calendarYear == currentDate.getFullYear()){
                     //if the current event is taking place today
                     agendaInnerHTML += `
-                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] bg-slate-300 flex flex-col items-center h-fit">
+                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-slate-300 flex flex-col items-center h-fit">
                         <h4 id="today-text" class="text-center font-bold text-lg">Today</h4>
-                        <h3 id="event-date" class="text-2xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem]">3:00PM to 5:00PM MST (UTC-7)</h4>
+                        <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
+                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`;
                 }
                 else if (currSession.day < currentDate.getDate() && calendarMonth == currentDate.getMonth() && calendarMonth == currentDate.getMonth()){
                     //the current event took place in the past
                     agendaInnerHTML += `
-                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] bg-gray-400 flex flex-col items-center h-fit">
-                        <h3 id="event-date" class="text-2xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem]">3:00PM to 5:00PM MST (UTC-7)</h4>
+                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-gray-400 flex flex-col items-center h-fit">
+                        <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
+                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`;
                 }
                 else{
                     // the current event will take place in the future
                     agendaInnerHTML += `
-                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] bg-gray-300 flex flex-col items-center h-fit">
-                        <h3 id="event-date" class="text-2xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem]">3:00PM to 5:00PM MST (UTC-7)</h4>
+                    <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-gray-300 flex flex-col items-center h-fit">
+                        <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
+                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`
                 }
