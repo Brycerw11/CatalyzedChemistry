@@ -262,8 +262,14 @@
   .mx-\[3rem\] {
     margin-inline: 3rem;
   }
+  .mx-\[5rem\] {
+    margin-inline: 5rem;
+  }
   .mx-\[5vw\] {
     margin-inline: 5vw;
+  }
+  .mx-\[rem\] {
+    margin-inline: rem;
   }
   .my-\[0\.5rem\] {
     margin-block: 0.5rem;
