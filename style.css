@@ -257,6 +257,15 @@
   .mx-\[2rem\] {
     margin-inline: 2rem;
   }
+  .mx-\[5vw\] {
+    margin-inline: 5vw;
+  }
+  .my-\[0\.5rem\] {
+    margin-block: 0.5rem;
+  }
+  .my-\[0\.75rem\] {
+    margin-block: 0.75rem;
+  }
   .my-\[2rem\] {
     margin-block: 2rem;
   }
@@ -301,6 +310,9 @@
   }
   .mb-\[0\.45rem\] {
     margin-bottom: 0.45rem;
+  }
+  .mb-\[1\.5rem\] {
+    margin-bottom: 1.5rem;
   }
   .mb-\[1rem\] {
     margin-bottom: 1rem;
@@ -386,6 +398,9 @@
   }
   .w-max {
     width: max-content;
+  }
+  .max-w-\[37\.5rem\] {
+    max-width: 37.5rem;
   }
   .min-w-\[45\%\] {
     min-width: 45%;
@@ -645,6 +660,9 @@
   .py-\[0\.75rem\] {
     padding-block: 0.75rem;
   }
+  .pt-\[1rem\] {
+    padding-top: 1rem;
+  }
   .pl-\[0\.5rem\] {
     padding-left: 0.5rem;
   }
@@ -878,6 +896,11 @@
       width: 32rem;
     }
   }
+  .md\:w-\[37\.5rem\] {
+    @media (width >= 48rem) {
+      width: 37.5rem;
+    }
+  }
   .md\:w-\[38rem\] {
     @media (width >= 48rem) {
       width: 38rem;
@@ -896,6 +919,16 @@
   .md\:w-fit {
     @media (width >= 48rem) {
       width: fit-content;
+    }
+  }
+  .md\:max-w-\[37\.5rem\] {
+    @media (width >= 48rem) {
+      max-width: 37.5rem;
+    }
+  }
+  .md\:max-w-\[60rem\] {
+    @media (width >= 48rem) {
+      max-width: 60rem;
     }
   }
   .md\:flex-row {
