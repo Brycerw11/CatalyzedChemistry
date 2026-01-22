@@ -61,7 +61,7 @@ $(function (){
                     <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-slate-300 flex flex-col items-center h-fit">
                         <h4 id="today-text" class="text-center font-bold text-lg">Today</h4>
                         <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
+                        <h4 id="event-time" class="mb-[0.45rem] md:mb-[0.65rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`;
                 }
@@ -70,7 +70,7 @@ $(function (){
                     agendaInnerHTML += `
                     <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-gray-400 flex flex-col items-center h-fit">
                         <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
+                        <h4 id="event-time" class="mb-[0.45rem] md:mb-[0.65rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`;
                 }
@@ -79,7 +79,7 @@ $(function (){
                     agendaInnerHTML += `
                     <div id="event" class="border-3 rounded-xl p-[0.35rem] px-[0.5rem] sm:p-[0.5rem] sm:px-[0.65rem] bg-gray-300 flex flex-col items-center h-fit">
                         <h3 id="event-date" class="text-2xl md:text-3xl font-semibold">${arrOfMonths[calendarMonth]} ${currSession.day}, ${calendarYear}</h3>
-                        <h4 id="event-time" class="mb-[0.45rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
+                        <h4 id="event-time" class="mb-[0.45rem] md:mb-[0.65rem] md:text-lg">3:00PM to 5:00PM MST (UTC-7)</h4>
                         ${eventTypeHTML}
                     </div>`
                 }
