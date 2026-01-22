@@ -369,6 +369,9 @@
   .w-\[80vw\] {
     width: 80vw;
   }
+  .w-\[90vw\] {
+    width: 90vw;
+  }
   .w-\[98\%\] {
     width: 98%;
   }
@@ -759,6 +762,11 @@
       margin-inline: 3rem;
     }
   }
+  .sm\:mt-\[8\.5rem\] {
+    @media (width >= 40rem) {
+      margin-top: 8.5rem;
+    }
+  }
   .sm\:size-\[2\.25rem\] {
     @media (width >= 40rem) {
       width: 2.25rem;
@@ -780,6 +788,11 @@
   .sm\:min-h-\[40vh\] {
     @media (width >= 40rem) {
       min-height: 40vh;
+    }
+  }
+  .sm\:w-\[80vw\] {
+    @media (width >= 40rem) {
+      width: 80vw;
     }
   }
   .sm\:rounded-full {
@@ -823,6 +836,11 @@
   .md\:mt-\[3\.25rem\] {
     @media (width >= 48rem) {
       margin-top: 3.25rem;
+    }
+  }
+  .md\:mt-\[5\.25rem\] {
+    @media (width >= 48rem) {
+      margin-top: 5.25rem;
     }
   }
   .md\:mt-\[6\.25rem\] {
