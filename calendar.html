@@ -44,14 +44,14 @@
         <script src="./src/scripts/calendar/calendar.js"></script>
         
         <script>
-            var targetDay = 7
-            var targetMonth = 3
+            var targetDay = 6
+            var targetMonth = 0
             var targetYear = 2026;
 
             // loop for study sessions
-            for(var i = 0; i < 15; i++){
-                createEvent(targetMonth, targetDay, targetYear, true, "#", "Group Study Session");
-                console.log([targetDay, targetMonth, targetYear]);
+            for(var i = 0; i < 35; i++){
+
+                createEvent(targetMonth, targetDay, targetYear, true, "https://zoom.us/signin#/login", "Group Study Session");
 
                 targetDay += 7;
                 if(targetDay > dayCount[targetMonth]){
@@ -65,6 +65,30 @@
                 }
 
             }
+
+            targetDay = 9
+            targetMonth = 3
+            targetYear = 2026;
+
+            // loop for student lecture sessions
+            for(var i = 0; i < 12; i++){
+                createEvent(targetMonth, targetDay, targetYear, true, "https://zoom.us/signin#/login", "Student-Led Lecture");
+                console.log([targetDay, targetMonth, targetYear]);
+
+                targetDay += 14;
+                if(targetDay > dayCount[targetMonth]){
+                    targetDay -= dayCount[targetMonth];
+                    targetMonth++;
+
+                    if(targetMonth > 12){
+                        targetMonth = 1;
+                        targetYear++;
+                    }
+                }
+
+            }
+
+            createEvent(4, 5, 2026, true, "https://apcentral.collegeboard.org/exam-administration-ordering-scores/exam-dates", "AP Chemistry Exam")
             
             reloadCalendar();
         </script>
