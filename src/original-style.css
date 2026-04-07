@@ -4,10 +4,15 @@ div#calendar table {
     width: 80%;
     margin: auto;
     margin-bottom: 2rem;
-    border: 3px solid black;
+    border: 4px solid black;
     border-radius: 22px;
     border-collapse: collapse;
 }
+
+tr{
+    border-radius: 12px;
+}
+
 
 div#calendar caption {
     width: 100%;
@@ -17,17 +22,19 @@ div#calendar caption {
 }
 
 td:not(.calendarDates) {
+    /* background-color: oklch(55.1% 0.027 264.364); */
     background-color: gray;
 }
 
 .calendarDates {
     width: 14.28%;
-    border: 1px solid black;
+    border: 2px solid black;
     height: 90px;
 }
 
 th {
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 22px;
     height: 20px;
 }
 
@@ -36,10 +43,11 @@ th {
     bottom: 30px;
     z-index: 3;
     float: left;
+    margin-left: 0.15rem;
 }
 
 #calendarToday {
-    background-color: rgb(221, 218, 218);
+    background-color: oklch(92.9% 0.013 255.508);
 }
 
 .calendarDates {
@@ -65,7 +73,7 @@ th {
 
 .calendarNext {
     position: relative;
-    top: 35px;
+    top: 42px;
     left: 75%;
     font-size: 1.5em;
     cursor: pointer;
@@ -73,7 +81,7 @@ th {
 
 .calendarPrev {
     position: relative;
-    top: 35px;
+    top: 42px;
     left: 25%;
     font-size: 1.5em;
     cursor: pointer;

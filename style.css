@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-orange-700: oklch(55.3% 0.195 38.402);
+    --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-emerald-700: oklch(50.8% 0.118 165.612);
     --color-cyan-700: oklch(52% 0.105 223.128);
     --color-purple-700: oklch(49.6% 0.265 301.924);
@@ -265,6 +266,12 @@
   .mt-\[13\.5rem\] {
     margin-top: 13.5rem;
   }
+  .mb-0 {
+    margin-bottom: calc(var(--spacing) * 0);
+  }
+  .mb-\[0\.15rem\] {
+    margin-bottom: 0.15rem;
+  }
   .mb-\[0\.45rem\] {
     margin-bottom: 0.45rem;
   }
@@ -279,6 +286,9 @@
   }
   .mb-\[2rem\] {
     margin-bottom: 2rem;
+  }
+  .ml-\[1rem\] {
+    margin-left: 1rem;
   }
   .block {
     display: block;
@@ -422,6 +432,9 @@
   }
   .border-white {
     border-color: var(--color-white);
+  }
+  .bg-amber-700 {
+    background-color: var(--color-amber-700);
   }
   .bg-cyan-700 {
     background-color: var(--color-cyan-700);
@@ -745,9 +758,12 @@ div#calendar table {
   width: 80%;
   margin: auto;
   margin-bottom: 2rem;
-  border: 3px solid black;
+  border: 4px solid black;
   border-radius: 22px;
   border-collapse: collapse;
+}
+tr {
+  border-radius: 12px;
 }
 div#calendar caption {
   width: 100%;
@@ -760,11 +776,12 @@ td:not(.calendarDates) {
 }
 .calendarDates {
   width: 14.28%;
-  border: 1px solid black;
+  border: 2px solid black;
   height: 90px;
 }
 th {
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 22px;
   height: 20px;
 }
 .calendarNum {
@@ -772,9 +789,10 @@ th {
   bottom: 30px;
   z-index: 3;
   float: left;
+  margin-left: 0.15rem;
 }
 #calendarToday {
-  background-color: rgb(221, 218, 218);
+  background-color: oklch(92.9% 0.013 255.508);
 }
 .calendarDates {
   max-height: 89px;
@@ -795,14 +813,14 @@ th {
 }
 .calendarNext {
   position: relative;
-  top: 35px;
+  top: 42px;
   left: 75%;
   font-size: 1.5em;
   cursor: pointer;
 }
 .calendarPrev {
   position: relative;
-  top: 35px;
+  top: 42px;
   left: 25%;
   font-size: 1.5em;
   cursor: pointer;
