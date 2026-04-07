@@ -233,7 +233,7 @@ function getEventsForDay(day) {
     for (var i = 0; i < eventToday.length; i++) {
         html += "<p>"
         if (eventToday[i][1]) {
-            html += "<a href='" + eventToday[i][2] + "'>" + eventToday[i][3] + "</a>";
+            html += "<a href='" + eventToday[i][2] + `' target="_blank">` + eventToday[i][3] + "</a>";
         } else {
             html += eventToday[i][3];
         }
