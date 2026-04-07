@@ -3,6 +3,7 @@
 div#calendar table {
     width: 80%;
     margin: auto;
+    margin-bottom: 2rem;
     border: 3px solid black;
     border-radius: 22px;
     border-collapse: collapse;
